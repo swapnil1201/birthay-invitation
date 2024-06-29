@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby's Birthday Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="invitation">
+        <div class="header">
+            <h1>You're Invited!</h1>
+        </div>
+        <div class="content">
+             
+            <p class="intro">Join us for a special celebration!</p>
+            <p class="baby-name"> My Baby <strong>Pradyumna's</strong> 1st Birthday</p>
+            <p class="baby-name"><strong>&</strong></p>
+            <p class="baby-name"><strong>My Anniversary </strong></p>
+            <button class="btn" onclick="toggleDetails()">Read More</button>
+            <div class="details hidden">
+                <p class="details-item">Date: <strong>June 30, 2024</strong></p>
+                <p class="details-item">Time: <strong>6:00 PM - 10:00 PM</strong></p>
+                <p class="details-item">Location: <strong>MIDC, Moshi, Pune, Pimpri-Chinchwad, Maharashtra 412105</strong></p>
+                <p>Find us on <a href="https://maps.app.goo.gl/3PuX7KHWSWhP8tZw5" target="_blank">Google Maps</a></p>
+                
+                <div id="map" class="map"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>We look forward to celebrating with you!</p>
+        </div>
+    </div>
+    <!-- Link to the external JavaScript file -->
+    <script src="swa.js"></script>
+    <!-- Link to Google Maps JavaScript API -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+</html>
